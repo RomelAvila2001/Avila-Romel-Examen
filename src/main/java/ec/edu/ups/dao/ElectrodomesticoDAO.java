@@ -39,41 +39,26 @@ public class ElectrodomesticoDAO implements IElectrodomesticoDAO {
 
     @Override
     public List<Lavadora> findAll() {
-        ArrayList<Lavadora> lava = new ArrayList<>();
-
+        ArrayList<Lavadora> lavadora = new ArrayList<>();
 	Lavadora l = new Lavadora();
-
 	for(Electrodomestico e : lista){
-
 	    if(e.getClass() == l.getClass()){
-
-		lava.add((Lavadora)e);
-
+		lavadora.add((Lavadora)e);
 	    }
-
 	}
-
-	return lava;
+	return lavadora;
     }
 
     @Override
     public List<Television> findAll2() {
-        ArrayList<Television> teles = new ArrayList<>();
-
+        ArrayList<Television> tele = new ArrayList<>();
 	Television t = new Television();
-
 	for(Electrodomestico e : lista){
-
 	    if(e.getClass() == t.getClass()){
-
-		teles.add((Television)e);
-
+		tele.add((Television)e);
 	    }
-
 	}
-
-	return teles;
-
+	return tele;
     }
 }
     
