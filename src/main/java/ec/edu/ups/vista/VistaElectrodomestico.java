@@ -65,9 +65,7 @@ public class VistaElectrodomestico {
      public void mostrarTelevisiones(List<Television> televisiones){
 
 	for(Television televisor : televisiones){
-
 	    System.out.println(televisor.toString());
-
 	}
 
     }
@@ -75,9 +73,7 @@ public class VistaElectrodomestico {
     public void mostrarLavadoras(List<Lavadora> Lavadoras){
 
 	for(Lavadora lavadora : Lavadoras){
-
 	    System.out.println(lavadora.toString());
-
 	}
 
     }
