@@ -117,11 +117,44 @@ public class Electrodomestico implements Comparable<Electrodomestico> {
         return (int) (this.precioBase - o.precioBase);
     }
     
-
+//obtener precio final clase Electrodomestico
     public double obtenerPrecioFinal()
     {
-        return 0;
-        
+        String A="A";
+        String B="B";
+        String C="C";
+        String D="D";
+        String E="E";
+        String F="F";
+        char c1= A.charAt(0);
+        char c2= B.charAt(0);
+        char c3= C.charAt(0);
+        char c4= D.charAt(0);
+        char c5= E.charAt(0);
+        char c6= F.charAt(0);
+        double presio=0;
+        if(consumoEnergetico==c1){
+            presio=100; }
+        if(consumoEnergetico==c2){
+            presio=80;}
+        if(consumoEnergetico==c3){
+            presio=60;}
+        if(consumoEnergetico==c4){
+            presio=50;}
+        if(consumoEnergetico==c5){
+            presio=30;}
+        if(consumoEnergetico==c6){
+            presio=10;}
+        if(peso >= 0 && peso <= 19){
+	    presio += 10;
+	} else if(peso >= 20 && peso <= 49){
+	    presio += 50;
+	}if(peso >= 50 && peso <= 79){
+	    presio += 80;
+	}else if(peso >= 80){
+	    presio += 100;
+	}
+	return (presio+precioBase);
     }
     
     @Override

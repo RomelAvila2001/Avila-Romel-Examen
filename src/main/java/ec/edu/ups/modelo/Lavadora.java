@@ -59,7 +59,7 @@ public class Lavadora extends Electrodomestico {
         return true;
     }
 
-    
+    // obtener presio final clase lavadora
     @Override
     public double obtenerPrecioFinal()
     {
@@ -68,7 +68,7 @@ public class Lavadora extends Electrodomestico {
         {
             aumento=50;
         }
-        return (+aumento);
+        return (super.obtenerPrecioFinal()+aumento);
         
     }
     

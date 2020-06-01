@@ -42,7 +42,7 @@ public class Television extends Electrodomestico{
     public void setPuertoHDMI(boolean puertoHDMI) {
         this.puertoHDMI = puertoHDMI;
     }
-
+    // obtener precio final clase Television
     @Override
     public double obtenerPrecioFinal()
     {
@@ -50,13 +50,13 @@ public class Television extends Electrodomestico{
        double aumento2=0;
        if(resolucion>40)
        {
-           
+           aumento=super.getPrecioBase()*0.3;
        }
        if(puertoHDMI==true)
        {
            aumento2=50;
        }
-        return (aumento+aumento2);
+        return (super.obtenerPrecioFinal()+aumento+aumento2);
        
     }
 
